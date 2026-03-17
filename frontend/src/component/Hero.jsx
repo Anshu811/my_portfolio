@@ -1,10 +1,9 @@
-// Hero.jsx
 import React from "react";
-import heroImage from "../assets/hero.png"; // ya jo bhi aapne image ka naam rakha hai
+import heroImage from "../assets/hero.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-content">
         <h1>Hello, I'm Anshu</h1>
         <h2>Frontend Developer</h2>

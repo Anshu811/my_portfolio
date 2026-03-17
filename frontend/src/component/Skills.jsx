@@ -1,18 +1,17 @@
-import React from "react";
+import React from 'react';
 
 const Skills = () => {
+  const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"];
+  
   return (
-    <div className="skills">
+    <section id="skills" className="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>MongoDB</li>
-      </ul>
-    </div>
+      <div className="skills-list">
+        {skills.map((skill, index) => (
+          <span className="skill-item" key={index}>{skill}</span>
+        ))}
+      </div>
+    </section>
   );
 };
 
